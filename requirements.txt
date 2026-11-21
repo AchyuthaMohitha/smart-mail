@@ -1,0 +1,24 @@
+# SmartMail - core packages (tested with Python 3.11)
+# Install with:  pip install -r requirements.txt
+
+# Web dashboard
+Flask==3.1.3
+
+# Machine learning (TF-IDF + Naive Bayes) and saving the model
+scikit-learn==1.9.1
+joblib==1.6.0
+
+# Link summarizer (download + read web pages)
+requests==2.34.2
+beautifulsoup4==4.15.0
+
+# Reads settings from the .env file
+python-dotenv==1.2.4
+
+# Gmail API with OAuth (only used in the Gmail module, near the end)
+google-api-python-client==2.201.0
+google-auth-oauthlib==1.5.0
+google-auth-httplib2==0.4.4
+
+# Face-Lock packages are installed separately later (requirements-face.txt),
+# because they are the hardest to install on Windows.

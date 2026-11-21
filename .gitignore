@@ -1,0 +1,14 @@
+# Virtual environment
+.venv/
+venv/
+
+# Python cache files
+__pycache__/
+*.pyc
+
+# Secrets and private data - NEVER upload these
+.env
+instance/
+
+# Generated model (can be re-created by running train_classifier.py)
+models/*.joblib

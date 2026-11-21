@@ -1,0 +1,18 @@
+# SmartMail - OPTIONAL Face-Lock packages (tested with Python 3.11)
+# The app works without these (password login is used instead).
+#
+# Install with TWO commands (inside the activated .venv):
+#   pip install -r requirements-face.txt
+#   pip install --no-deps face_recognition==1.3.0
+#
+# Why two commands? face_recognition asks for "dlib", which needs a C++
+# compiler on Windows. "dlib-bin" is the same library, pre-built, so no
+# compiler is needed. --no-deps stops pip from trying to build dlib again.
+
+opencv-python==4.14.0.94
+dlib-bin==20.0.1.post1
+face_recognition_models==0.3.0
+Pillow==13.0.0
+Click==8.5.0
+# face_recognition_models uses pkg_resources, which newer setuptools removed
+setuptools<81
